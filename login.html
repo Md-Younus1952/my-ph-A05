@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Fetching project | Assignment 05</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind Daisy UI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+
+    <div class="card w-96 bg-white shadow-xl p-6 items-center mx-auto mt-4">
+
+        <!-- Logo -->
+        <div class="logo w-[80px] mx-auto pt-4">
+            <img src="./assets/github-logo.png" alt="logo">
+        </div>
+
+        <div class="text-center">
+            <h2 class="text-xl font-bold mt-4">GitHub Issues Tracker</h2>
+            <p class="text-sm text-gray-500">Sign in to manage your issues</p>
+        </div>
+
+        <!-- Form -->
+        <form class="w-full mt-6">
+
+            <label class="label">Username</label>
+            <input id="user-name" type="text" placeholder="admin" class="input input-bordered w-full" />
+            <p class="text-xs text-cyan-600 mb-2">Default: admin</p>
+
+            <label class="label">Password</label>
+            <input id="password-check" type="password" placeholder="******" class="input input-bordered w-full" />
+            <p class="text-xs text-cyan-600 mb-3">Default: admin123</p>
+
+            <div class="form-control mb-4">
+                <label class="cursor-pointer label justify-start gap-2">
+                    <input type="checkbox" class="checkbox checkbox-sm">
+                    <span class="label-text">Remember me</span>
+                </label>
+            </div>
+
+            <button id="login-btn"
+                class="btn btn-primary w-full bg-gradient-to-r from-purple-600 to-indigo-600 border-none">
+                Sign In
+            </button>
+
+        </form>
+
+        <div class="divider">OR</div>
+
+        <div class="bg-gray-100 p-3 rounded text-sm text-center">
+            <p class="font-semibold">Demo Credential</p>
+            <p>Username: admin</p>
+            <p>Password: admin123</p>
+        </div>
+
+    </div>
+    <script src="./scripts/login.js"></script>
+</body>
+
+</html>
