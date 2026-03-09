@@ -1,17 +1,16 @@
-console.log("login-functonality");
-
 document.getElementById("login-btn").addEventListener("click", function () {
-  const username = document.getElementById("user-name");
-  const userNameValue = username.value;
+  const UserNameCeck = document.getElementById("user-name");
+  const userNameValue = UserNameCeck.value;
   console.log(userNameValue);
-
-  const password = document.getElementById("password-check");
-  const passwordValue = password.value;
+  const passwordCheck = document.getElementById("password-check");
+  const passwordValue = passwordCheck.value;
   console.log(passwordValue);
 
-  if (userNameValue == "admin" && passwordValue == "admin123") {
-    window.location.assign("./home.html");
+  if (userNameValue === "admin" && passwordValue === "admin123") {
+    alert("Login successful!");
+    window.location.assign("home.html");
+    // Redirect to another page or perform other actions
   } else {
-    document.getElementById("error").innerText = "Invalid Username or Password";
+    alert("Invalid username or password. Please try again.");
   }
 });
