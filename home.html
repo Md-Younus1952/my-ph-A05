@@ -25,8 +25,24 @@
 <body>
 
     <header>
-        <nav class="navbar bg-base-100">
-            <div class="flex-1">
+        <nav class="w-11/12 mx-auto">
+            <div class="navbar justify-between bg-base-100 shadow-sm">
+                <div class="flex gap-1">
+                    <img src="./assets/github-logo.png" alt="logo" class="w-[36px] h-[37px]">
+                    <a class=" btn btn-ghost text-xl">GitHub Issues Tracker</a>
+                </div>
+                <div class="flex gap-4">
+                    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+
+                    <div class="items-center ">
+                        <button class="btn btn-primary"><span><i class="fa-solid fa-plus"></i></span></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- <nav class="navbar bg-base-100">
+            <div class="flex flex-1 gap-2">
+                <img src="./assets/github-logo.png" alt="logo">
                 <a class="btn btn-ghost normal-case text-xl">Data Fetching</a>
             </div>
             <div class="flex-none gap-2">
@@ -41,7 +57,7 @@
                     </svg>
                 </button>
             </div>
-        </nav>
+        </nav> -->
     </header>
 
     <script src="./scripts/login.js"></script>
